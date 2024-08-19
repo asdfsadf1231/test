@@ -25,6 +25,6 @@ jobs:
       -
         name: build
         run: run && docker compose build
-      -
+      - 
         name: push
         run: docker compose push
