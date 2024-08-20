@@ -9,7 +9,7 @@ services:
       - ./backend:/app
     environment:
       - NODE_ENV=development
-    image: ${IMAGE_1}
+    image: ${{ IMAGE_1 }}
 
   frontend:
     build: ./frontend
@@ -21,4 +21,4 @@ services:
       - NODE_ENV=development
     depends_on:
       - backend
-    image: ${IMAGE_2}
+    image: ${{ IMAGE_2 }}
